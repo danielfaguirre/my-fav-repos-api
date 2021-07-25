@@ -25,6 +25,7 @@ export default class GHRepositoryProvider implements IGHRepository {
             const body = await response.json();
             return transformGHData(body, ghRepositories, userName);
         } catch (error) {
+            console.log(error);
             return [];
         }
     }

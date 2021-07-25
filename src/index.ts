@@ -18,5 +18,5 @@ app.use('/graphql/users', userRoute);
 app.use('/graphql/gh_repositories', GHrespositoryRoute);
 
 app.listen(SERVER_PORT, () =>
-    console.log(`Example app listening on port port!`)
+    console.log(`Example app listening on port 3001!`)
 );
